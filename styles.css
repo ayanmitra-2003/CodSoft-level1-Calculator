@@ -1,0 +1,143 @@
+/* Centering container */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #f0f0f0;
+    color: #333;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  /* Header section with title and button side by side */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  /* Title style */
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Circular dark mode button */
+  #theme-toggle {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    border: 2px solid #333;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #fff;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+  }
+  
+  #theme-toggle:hover {
+    background: #333;
+    color: #fff;
+  }
+  
+  /* Dark mode button styles */
+  .dark-mode #theme-toggle {
+    background: #333;
+    color: #fff;
+    border: 2px solid #fff;
+  }
+  
+  .dark-mode #theme-toggle:hover {
+    background: #fff;
+    color: #333;
+  }
+  
+  /* Calculator design */
+  .calculator {
+    width: 300px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .display {
+    padding: 20px;
+    font-size: 2rem;
+    text-align: right;
+    background: #333;
+    color: #fff;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: #ddd;
+  }
+  
+  button {
+    padding: 20px;
+    font-size: 1.2rem;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  button:hover {
+    background: #f0f0f0;
+  }
+  
+  button.equals {
+    grid-column: span 2;
+    background: #ff9500;
+    color: #fff;
+  }
+  
+  button.equals:hover {
+    background: #e68a00;
+  }
+  
+  /* Dark mode styles */
+  .dark-mode {
+    background: #121212;
+    color: #fff;
+  }
+  
+  .dark-mode .calculator {
+    background: #333;
+  }
+  
+  .dark-mode .display {
+    background: #000;
+    color: #0f0;
+  }
+  
+  .dark-mode .buttons {
+    background: #444;
+  }
+  
+  .dark-mode button {
+    background: #666;
+    color: #fff;
+  }
+  
+  .dark-mode button:hover {
+    background: #777;
+  }
+  
+  .dark-mode button.equals {
+    background: #ff9500;
+    color: #fff;
+  }
+  
